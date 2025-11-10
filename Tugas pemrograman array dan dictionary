@@ -1,0 +1,60 @@
+# ===============================
+# Contoh Program Array & Dictionary
+# ===============================
+
+# --- ARRAY (LIST) ---
+# Array digunakan untuk menyimpan sekumpulan data dalam satu variabel
+buah = ["Apel", "Jeruk", "Mangga", "Pisang"]
+
+print("=== ARRAY (LIST) ===")
+print("Daftar buah:", buah)
+
+# Mengakses elemen array
+print("Buah pertama:", buah[0])
+print("Buah terakhir:", buah[-1])
+
+# Menambah elemen baru
+buah.append("Semangka")
+print("Setelah ditambah:", buah)
+
+# Menghapus elemen
+buah.remove("Jeruk")
+print("Setelah dihapus:", buah)
+
+# Melakukan perulangan pada array
+print("\nDaftar buah satu per satu:")
+for b in buah:
+    print("-", b)
+
+
+# --- DICTIONARY ---
+# Dictionary menyimpan data dalam pasangan key-value
+siswa = {
+    "nama": "Andi",
+    "umur": 17,
+    "kelas": "12 IPA",
+    "nilai": 88
+}
+
+print("\n=== DICTIONARY ===")
+print("Data siswa:", siswa)
+
+# Mengakses nilai berdasarkan key
+print("Nama siswa:", siswa["nama"])
+
+# Menambah data baru
+siswa["alamat"] = "Jakarta"
+print("Setelah menambah alamat:", siswa)
+
+# Mengubah data
+siswa["nilai"] = 92
+print("Setelah memperbarui nilai:", siswa)
+
+# Menghapus data
+del siswa["umur"]
+print("Setelah menghapus umur:", siswa)
+
+# Menampilkan seluruh key dan value
+print("\nData siswa lengkap:")
+for key, value in siswa.items():
+    print(f"{key} : {value}")
